@@ -27,10 +27,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            //En Styles y scripts se configura todo para que funcione bootstrap
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"//Para que funcione bootstrap
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "miPrimeraApp"
+  "defaultProject": "miPrimeraApp",
+  "cli": {
+    "analytics": "0ed18f23-f19d-4518-88f3-2efea2abfe4d"
+  }
 }
