@@ -1,0 +1,40 @@
+<hr>
+<form class="form-row">
+  <div class="container">
+    <div class="">
+      <div class="contactenos">
+        <h1>Contactenos</h1>
+        <label>Nombre:</label>
+        <input type="text" name="name" id="name" class="form-control" [(ngModel)]="inputName"
+          placeholder="Ingrese su nombre..."><br>
+
+        <label>Apellido:</label>
+        <input type="text" name="lastname" id="lastname" class="form-control" [(ngModel)]="inputLastname"
+          placeholder="Ingrese su apellido..."><br>
+
+        <label>Télefono:</label>
+        <input type="text" name="phonenumber"class="form-control" [(ngModel)]="inputPhonenumber"
+          placeholder="Ingrese su número teléfonico..."><br>
+
+        <label>Correo:</label>
+        <input type="text" name="email"  class="form-control" [(ngModel)]="inputEmail"
+          placeholder="Ingrese su correo electrónico"><br>
+
+        <div class="col">
+          <button type="submit" class="btn btn-primary" (click)="addClient()">Enviar datos</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>
+
+<br>
+
+<!--Ejemplo de NGFOR Listado de personas Desde el componente padre
+<div *ngFor="let pedido of pedidos; let i = index">
+  {{i+1}} : {{pedido.name}},{{pedido.lastname}},{{pedido.phonenumber}},{{pedido.email}}
+</div>-->
+
+
+<label>{{name}}</label>
